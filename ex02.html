@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let array = [];
+      let count = 0;
+      let ans = [];
+      for (let i = 0; i < 10; i++) {
+        let num = parseInt(Math.random() * 100 + 1);
+        array[i] = num;
+      }
+      for (let i = 0; i < 10; i++) {
+        let temp = array[i];
+        if (temp % 2 == 0) {
+          count++;
+          // 배열 마지막에 데이터를 추가해주세요.
+          ans.push(array[i]);
+        }
+      }
+      console.log(
+        "nums에 저장된 짝수는 " + ans + "이며 총" + count + "개 입니다."
+      );
+    </script>
+  </body>
+</html>
